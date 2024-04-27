@@ -1,0 +1,165 @@
+h2, h3, h4, p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+p {
+    color: grey;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 240px auto;
+    grid-template-rows: 1fr 3fr 1r;
+    grid-template-areas: 
+    "header header"
+    "sidebar main"
+    "footer footer";
+}
+/* header flex y font */
+.header {
+    grid-area: header;
+    background-color: #25527B;
+    height: 50px;
+}
+.tittle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.header h2 {
+    color: white;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+/* fin header flex y font */
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: #E7E7E7;
+    height: auto;
+}
+.main {
+    grid-area: main;
+    background-color: #E7E7E7;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    padding-bottom: 10px;
+}
+
+.card {
+    display: grid;
+    width: 80%;
+    height: 440;    
+    padding: 5px;
+
+}
+.preinside {
+    display: grid;
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    line-height: 55%;
+    text-align: center;
+    justify-items: center; /* imagen  */
+    align-content: center; /* all card content vertical */
+    background-color: white;
+}
+
+.card img{
+    width: 70%; 
+
+}
+.button {
+    display: flex;
+    width: 100%;
+    height: 51px;
+}
+
+.button button{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: #25527B;
+    border: none;
+    align-items: center;
+    justify-content: center;
+}
+
+h4 {
+    color: white;
+    font-size: 20px;
+    
+}
+.footer {
+    grid-area: footer;
+}
+
+.sidebarflex {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+}
+
+.categories {
+    padding-left: 10%;
+    padding-top: 3%;
+    padding-right: 5%;
+    padding-bottom: 1%;
+}
+
+.categories h3 {
+    line-height: 50%;
+    color: #3D434C;
+}
+
+.categories-list {
+    display: inline-block;
+    width: 80%;
+    padding-top: 1%;
+    padding-right: 1%;
+    padding-bottom: 5%;
+    line-height: 40%;
+}
+
+.categories-list {
+    padding-left: 5%;
+    margin-right: 5%;
+    line-height: 0%;
+}
+
+
+.listflex {
+    display: flex;
+    padding-left: 5%;
+    height: 24px;
+}
+.title-item {
+    color: #3D434C;
+}
+
+.quantity {
+    color: #92939b;
+    padding-left: 5%;
+}
+
+
+.footertittle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.footer h2 {
+    color: #92939b;
+    text-align: center;
+}
+
